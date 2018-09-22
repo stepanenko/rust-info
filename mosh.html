@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mosh Exercises</title>
+  </head>
+  <body>
+
+
+
+    <script>
+      function checkSpeed(speed){
+        const speedLimit = 70;
+        const kmPerPoint = 5;
+        const pointsLimit = 12;
+
+        if (speed < speedLimit + kmPerPoint){
+          console.log('Ok');
+          return;
+        }
+        const points = Math.floor((speed - speedLimit) / kmPerPoint);
+        console.log('Points: ', points);
+        if (points >= pointsLimit) console.log('License Suspended');
+        }
+
+        function showNumber(limit){
+          for(let i = 0; i <= limit; i++){
+
+            //(i % 2 === 0) ? console.log(i, "EVEN") : console.log(i, "ODD");
+
+            const message = (i % 2 === 0) ? "EVEN" : "ODD";
+            console.log(i, message);
+          }
+        }
+
+//Falsy:
+// undefined
+// null
+// NaN
+// ''
+// 0
+// false
+const array = [0, 4, 'hello', 0, false, undefined, 345, 'ksjdhgkdsufb'];
+countTruthy(array);
+function countTruthy(array){
+  let truthy = 0;
+  let falsy = 0;
+  //for (i = 0; i < array.length; i++) {
+  for (let value of array)
+    (value) ? truthy++ : falsy++;
+  console.log('Truthy: ', truthy, ' falsy: ', falsy);
+}
+
+const movie = {
+  title: 'Avengers',
+  year: 2017,
+  rating: 5.8,
+  director: 'Jack'
+}
+function showProp(obj){
+
+}
+
+// ====== ADRESS OBJECT =====
+let obj = {
+  street: 'Naukova',
+  city: 'Lviv',
+  zipCode: '4500',
+  showAddress: function(){
+    for(let key in obj)
+    console.log(key, obj[key]);
+  }
+}
+let address = obj.showAddress();
+console.log(address);
+
+// ===== FACTORY and CONSTRUCTOR FUNCTIONS =====
+// ===== Factory Function:
+function addr(street, city, zipCode){
+  return {
+    street,
+    city,
+    }
+  }
+
+let newAddress = addr("Chornovola");
+console.log(newAddress);
+
+// ===== Constructor Functions:
+
+function Ad(street, city){
+  this.street = street,
+  this.city = city
+}
+
+let newAd1 = new Ad('Saharova', "Odesa");
+let newAd2 = new Ad('Naukova', "Odesa");
+let newAd3 = newAd1;
+
+// ====== OBJECT EQUALITY =====
+console.log('Similar: ',areSame(newAd1, newAd2));
+console.log('Similar: ',areSame(newAd1, newAd3));
+console.log('Equality: ',areEqual(newAd1, newAd2));
+
+function areEqual(o1, o2){
+    return o1.street === o2.street &&
+      o1.city === o2.city;
+  }
+
+function areSame(obj1, obj2){
+  // My solution:
+  // if (obj1 === obj2) console.log('Objects are same');
+  // else console.log('Objects are NOT same');
+  // Mosh solution:
+  return obj1 === obj2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
