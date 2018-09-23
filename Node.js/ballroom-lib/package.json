@@ -1,6 +1,6 @@
 {
   "name": "ballroom-lib-90",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "ballroom dances library",
   "main": "ball.js",
   "scripts": {

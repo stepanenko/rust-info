@@ -13,3 +13,9 @@ package name inside package.json
 
 4. After published you can install your
 package as any other package via 'npm i ... '
+
+=== Updating published package ===
+1. Make a changes
+2. Use 'npm version <major/minor/patch>'
+e.g. 'npm version minor'
+3. Publish
