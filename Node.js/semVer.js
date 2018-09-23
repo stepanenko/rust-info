@@ -1,13 +1,3 @@
-const _ = require('underscore');
-
-// Require checks its argument in this order:
-// Core module
-// File or folder
-// node_modules
-
-const res = _.contains([1,2,3,4], 3);
-console.log(res);
-
 // === Semantic Versioning (SemVer)=====
 //"mongoose": "^5.2.17"    ^ Caret: same as 5.x (major.minor.patch(bug fixes))
 //"underscore": "~1.9.1"   ~ Tilde: same as 1.9.x
