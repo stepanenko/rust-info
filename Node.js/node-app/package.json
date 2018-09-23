@@ -1,0 +1,14 @@
+{
+  "name": "stepserg",
+  "version": "2.2.2",
+  "description": "app to test my own package published on npmjs.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergio",
+  "license": "ISC",
+  "dependencies": {
+    "ballroom-lib-90": "^1.5.0"
+  }
+}
