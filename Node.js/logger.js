@@ -1,12 +1,11 @@
-const url = 'http:/google.com';
+const EventEmitter = require('events');
 
-function log(message) {
-    // for now imagine here sending HTTP request
-    console.log(message)
+class Logger extends EventEmitter {
+  log(message) {
+  console.log(message)
+
+  this.emit('msg', { id: 1, url: 'http://somelink.com'});
+  }
 }
 
-module.exports.log = log;
-
-//module.exports = log;
-
-//console.log(module.exports); // [Function: log]
+module.exports = Logger;
