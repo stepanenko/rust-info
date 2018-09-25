@@ -1,14 +1,21 @@
 const Joi = require('joi');
+const log = require('./logging');
+const auth = require('./auth')
 const express = require('express');
 const app = express();
 
 app.use(express.json());
 
+app.use(log);
+
+app.use(auth);
+
 const courses = [
   { id: 1, name: 'course1'},
   { id: 2, name: 'course2'},
   { id: 3, name: 'course3'},
-]
+];
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
 });
@@ -31,6 +38,7 @@ app.post('/api/courses', (req, res) => {
     id: courses.length + 1,
     name: req.body.name
   };
+  
   courses.push(course);
   res.send(course);
 });
