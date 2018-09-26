@@ -1,12 +1,24 @@
+const morgan = require('morgan');
+const helmet = require('helmet');
 const Joi = require('joi');
 const log = require('./logging');
 const auth = require('./auth')
 const express = require('express');
+
 const app = express();
+
+// console.log(`NODE_ENV: ${process.env.NODE_ENV}`);
+//console.log(`app: ${app.get('env')}`)
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
+app.use(helmet());
+
+if (app.get('env') === 'development') {
+  app.use(morgan('tiny'));
+  console.log('Morgan enabled...')
+}
 
 // My Middleware functions:
 app.use(log);
@@ -76,4 +88,4 @@ function validateCourse(course) {
 
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Listening on port ${port}...`));
+app.listen(port, () => console.log(`Listening on http://localhost:${port}...`));
