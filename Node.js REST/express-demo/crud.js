@@ -1,3 +1,4 @@
+const config = require('config');
 const morgan = require('morgan');
 const helmet = require('helmet');
 const Joi = require('joi');
@@ -7,6 +8,9 @@ const express = require('express');
 
 const app = express();
 
+app.set('view engine', 'pug');
+app.set('views', './views');
+
 // console.log(`NODE_ENV: ${process.env.NODE_ENV}`);
 //console.log(`app: ${app.get('env')}`)
 
@@ -14,6 +18,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(helmet());
+
+//Configuration
+console.log('App Name: ' + config.get('name'));
+console.log('Mail Server: ' + config.get('mail.host'));
+//console.log('Mail Password: ' + config.get('mail.password')); //doesnt work coz I cant make 'set' work
 
 if (app.get('env') === 'development') {
   app.use(morgan('tiny'));
@@ -31,7 +40,7 @@ const courses = [
 ];
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.render('index', { title: 'My Express App', message: 'Hello'})
 });
 
 app.get('/api/courses', (req, res) => {
