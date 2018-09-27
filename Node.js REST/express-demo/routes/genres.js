@@ -12,7 +12,17 @@ router.get('/', (req, res) => {
   res.send(genres)
 });
 
+router.get("/:id", (request, response) => {
+  const gen = genres.find(g => g.id === parseInt(request.params.id));
+  if (!gen) return response.status(404).send('Such genre was not found');
+
+  response.send(gen);
+})
+
 router.post('/', (req, res) => {
+  const { error } = validateGenre(req.body);
+  if (error) return res.status(400).send(error.details[0].message);
+
   let gen = {};
   gen.id = genres.length + 1;
   gen.genre = req.body.genre;
