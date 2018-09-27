@@ -19,6 +19,11 @@ router.post('/', (req, res) => {
   res.send(genre);
 });
 
-
+router.delete('/:id', (req, res) => {
+  let id = req.params.id;
+  console.log(id)
+  //let deleted = genres.slice(, 1);
+  //res.send(deleted);
+})
 
 module.exports = router;
