@@ -4,22 +4,21 @@ console.log('after');
 
 // Named Function to rescue:
 
-function displayCommits(repo, commits) {
-  console.log(`List of ${repo}'s commits: ${commits}`)
-}
-
-function showRepos(user, repos) {
-  console.log(`${user}'s repos: ${repos}.`)
-
-  getCommits(repos[0], displayCommits)
-}
-
 function showUser(user) {
   console.log('User: ', user);
   
   getRepos(user.githubname, showRepos);
 }
 
+function showRepos(user, repos) {
+  console.log(`${user}'s repos: ${repos}.`)
+  
+  getCommits(repos[0], displayCommits)
+}
+
+function displayCommits(repo, commits) {
+  console.log(`List of ${repo}'s commits: ${commits}`)
+}
 
 
 
