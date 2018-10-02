@@ -1,15 +1,17 @@
-getCustomer(1, customer => {
+getCustomer(1, (customer) => {
   console.log('Customer: ', customer);
   if (customer.isGold) {
-    getTopMovies(movies => {
+    getTopMovies((movies) => {
       console.log('Top movies: ', movies);
-      sendEmail(customer.email, movies, () => {
+      sendEmail(movies, () => {
         console.log('Email sent...')
-      });
-    });
+      })
+    })
   }
 });
 
+// === Named Functions Approach ===
+  
 function getCustomer(id, callback) {
   setTimeout(() => {
     callback({
@@ -18,16 +20,16 @@ function getCustomer(id, callback) {
       isGold: true,
       email: 'sergio@step.com'
     })
-  }, 3000)
+  }, 2000)
 }
 
 function getTopMovies(callback) {
   setTimeout(() => {
     callback(['movie1', 'movie2'])
-  }, 2000)
+  }, 1500)
 }
 
-function sendEmail(email, movies, callback) {
+function sendEmail(movies, callback) {
   setTimeout(() => {
     callback()
   }, 1000)
