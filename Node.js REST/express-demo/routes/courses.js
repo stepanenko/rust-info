@@ -61,3 +61,4 @@ function validateCourse(course) {
 }
 
 module.exports = router;
+//console.log(typeof express);
