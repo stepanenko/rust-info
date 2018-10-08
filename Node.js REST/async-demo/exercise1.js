@@ -1,3 +1,5 @@
+// === Callback approach ===
+
 getCustomer(1, (customer) => {
   console.log('Customer: ', customer);
   if (customer.isGold) {
@@ -10,7 +12,6 @@ getCustomer(1, (customer) => {
   }
 });
 
-// === Named Functions Approach ===
   
 function getCustomer(id, callback) {
   setTimeout(() => {

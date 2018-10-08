@@ -2,7 +2,7 @@ const config = require('config');
 const morgan = require('morgan');
 const helmet = require('helmet');
 const log = require('./middleware/logging');
-const auth = require('./auth');
+const auth = require('./middleware/auth');
 const courses = require('./routes/courses');
 const home = require('./routes/home');
 const genres = require('./routes/genres');
@@ -20,9 +20,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(helmet());
-app.use('/api/courses', courses);
 app.use('/', home);
+app.use('/api/courses', courses);
 app.use('/api/genres', genres);
+
+// My Middleware functions:
+app.use(log); // doesnt work
+app.use(auth); // doesnt work
 
 //Configuration
 console.log('App Name: ' + config.get('name'));
@@ -34,9 +38,6 @@ if (app.get('env') === 'development') {
   console.log('Morgan enabled...')
 }
 
-// My Middleware functions:
-app.use(log);
-//app.use(auth);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on http://localhost:${port}...`));

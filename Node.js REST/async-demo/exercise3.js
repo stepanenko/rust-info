@@ -10,18 +10,21 @@ getCustomer(1, (customer) => {
   }
 });
 
+
+
 // === Promises Approach ===
   
-function getCustomer(id, callback) {
-  setTimeout(() => {
-    callback({
-      id: 1,
-      name: 'Sergio Stepanenko',
-      isGold: true,
-      email: 'sergio@step.com'
-    })
-  }, 2000)
-}
+function getCustomer(id) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve({
+        id: 1,
+        name: 'Sergio Stepanenko',
+        isGold: true,
+        email: 'sergio@step.com'
+      })
+    }, 2000)
+  }
 
 function getTopMovies(callback) {
   setTimeout(() => {
