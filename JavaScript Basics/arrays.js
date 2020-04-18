@@ -1,70 +1,52 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <script>
+
 // === ADDING TO ARRAY ====
-// const numbers = [3,4];
-// //End
-// numbers.push(5,6);
-// console.log(numbers);
-//
-// // Beginning
-// numbers.unshift(1,2);
-// console.log(numbers);
-//
-// // Middle
-// numbers.splice(2, 0, 'a', 'b');
-// console.log(numbers);
+const numbers = [3, 4];
+
+// End
+numbers.push(5, 6);
+
+// Beginning
+numbers.unshift(1, 2);
+
+// Middle
+numbers.splice(2, 0, 'a', 'b');  // [ 1, 2, 'a', 'b', 3, 4, 5, 6 ]
+
 
 // === FINDING ELEMENTS ===
+const numbers2 = [1, 4, 2, 3, 'de', 1, 4];
 
-// const numbers = [1, 4, 2, 3, 'de', 1, 4];
-//
-// //console.log(numbers.indexOf(7));
-//
-// console.log(numbers.lastIndexOf('de'));
-//
-// console.log(numbers.indexOf('de') !== -1);
-// // New better way:
-// console.log(numbers.includes('de'));
-// console.log(numbers.indexOf(1, 6));
+numbers2.indexOf(7); // -1
+numbers2.lastIndexOf('de');  // 4
+numbers2.indexOf('de') !== -1;  // true
+
+// New better way:
+numbers2.includes('de');  // true
+numbers2.indexOf(1, 2);  // 5
+
 
 // === FINDING REFERENCE TYPES ===
 // .includes doesnt work on reference TYPES
 // instead we use .find
+const courses = [
+  { id: 0, name: "Java" },
+  { id: 1, name: 'PHP' }
+];
 
-// const courses = [
-//   { id: 0, name: "Java" },
-//   { id: 1, name: 'PHP'}
-// ];
-//
-//
-// const found = courses.find(element => element.name == "Java");
-// console.log(found);
-//
-// const index = courses.findIndex(function(course){
-//   return course.name === 'Jav';
-// })
-// console.log(index)
+const found = courses.find(element => element.name == "Java");  // { id: 0, name: 'Java' }
+const index = courses.findIndex(course => course.name === 'Jav')  // -1
+
 
 // === REMOVING ELEMENTS ===
-// const numbers = [1,2,3,4,5];
+const numbers3 = [1, 2, 3, 4, 5];
 // End
-// const last = numbers.pop();
-// console.log(last);
-// console.log(numbers);
-//
-// const first = numbers.shift();
-// console.log(first);
-// console.log(numbers);
+const last = numbers3.pop();  // last === 5;  [1, 2, 3, 4]
 
-// const mid = numbers.splice(2, 2);
-// console.log(mid);
-// console.log(numbers);
+// First
+const first = numbers3.shift();  // first === 1;  [ 2, 3, 4 ]
+
+// Middle
+const mid = numbers3.splice(2, 2);  // mid === [ 4 ];  [ 2, 3 ]
+
 
 // ==== EMPTYING AN ARRAY ===
 // Solution 1:
@@ -196,29 +178,9 @@
 
 // === REDUCE method ===
 
-const array = [1,2,3,4,5,6];
+const array = [1, 2, 3, 4, 5, 6];
 
 const sum = array.reduce(
   (accum, elem) => accum + elem
 );
 console.log(sum)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
-  </body>
-</html>
