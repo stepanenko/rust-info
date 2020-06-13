@@ -1,6 +1,4 @@
 
-## NodeJS Basics
+## New Repo Placeholder
 
-From Mosh Hamedani
-
-> This will be moved to general Mosh Nodejs course repo...
+Here can be a next project
