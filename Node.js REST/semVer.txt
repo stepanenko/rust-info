@@ -1,4 +1,6 @@
-// === Semantic Versioning (SemVer)=====
+
+// === Semantic Versioning (SemVer) =====
+
 //"mongoose": "^5.2.17"    ^ Caret: same as 5.x (major.minor.patch(bug fixes))
 //"underscore": "~1.9.1"   ~ Tilde: same as 1.9.x
 // if you use no ^ or ~ the 'npm i' will install exact same version

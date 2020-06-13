@@ -1,11 +1,15 @@
+
 === Development dependencies ===
+
 To install a dev dependencies (e.g. jshint)
-use 'npm i jshint --save-dev
+use 'npm i jshint --save-dev'
 
 To uninstall a dependency (e.g. mongoose)
-use 'npm un mongoose'
+use 'npm uninstall mongoose'
+
 
 === Global packages ===
+
 Here the same commands work as for local app packages
 
 For example:
@@ -13,5 +17,5 @@ For example:
 To check outdated global packages
 use 'npm -g outdated'
 
-To uninstall simply use 'npm un -g ...'
 
+To uninstall simply use 'npm uninstall -g <package_name>'

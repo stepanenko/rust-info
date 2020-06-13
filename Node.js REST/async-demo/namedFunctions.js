@@ -11,13 +11,13 @@ function showUser(user) {
 }
 
 function showRepos(user, repos) {
-  console.log(`${user}'s repos: ${repos}.`)
+  console.log(`${user}'s repos: ${repos}.`);
   
-  getCommits(repos[0], displayCommits)
+  getCommits(repos[0], displayCommits);
 }
 
 function displayCommits(repo, commits) {
-  console.log(`List of ${repo}'s commits: ${commits}`)
+  console.log(`List of ${repo}'s commits: ${commits}`);
 }
 
 
@@ -32,13 +32,12 @@ function getUser(id, callback) {
 function getRepos(username, callback) {
   setTimeout(() => {
     callback(username, ['repo1', 'repo2', 'repo3']);
-  }, 1000) 
+  }, 1000);
 }
 
 function getCommits(repoName, callback) {
   setTimeout(() => {
     console.log(`Looking for commits in ${repoName}...`);
-    callback(repoName, ['commit1', 'commit2'])
-  }, 1000)
+    callback(repoName, ['commit1', 'commit2']);
+  }, 1000);
 }
-

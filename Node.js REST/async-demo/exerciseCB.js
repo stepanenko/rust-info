@@ -6,9 +6,9 @@ getCustomer(1, (customer) => {
     getTopMovies((movies) => {
       console.log('Top movies: ', movies);
       sendEmail(movies, () => {
-        console.log('Email sent...')
-      })
-    })
+        console.log('Email sent...');
+      });
+    });
   }
 });
 
@@ -20,18 +20,18 @@ function getCustomer(id, callback) {
       name: 'Sergio Stepanenko',
       isGold: true,
       email: 'sergio@step.com'
-    })
-  }, 2000)
+    });
+  }, 2000);
 }
 
 function getTopMovies(callback) {
   setTimeout(() => {
-    callback(['movie1', 'movie2'])
-  }, 1500)
+    callback(['movie1', 'movie2']);
+  }, 1500);
 }
 
 function sendEmail(movies, callback) {
   setTimeout(() => {
-    callback()
-  }, 1000)
+    callback();
+  }, 1000);
 }

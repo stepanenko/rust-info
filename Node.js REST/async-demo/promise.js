@@ -47,7 +47,7 @@ function getUser(id) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log('Reading a user from database...');
-      resolve({ id: id, githubname: 'Sergio'});
+      resolve({ id: id, githubname: 'Sergio' });
     }, 1000);
   })
 }
@@ -58,8 +58,8 @@ function getRepositories() {
       console.log('Calling GitHub API ...');
       resolve(['repo1', 'repo2', 'repo3']);
       //reject(new Error('Could not load repos'));
-    }, 1000)
-  })
+    }, 1000);
+  });
 }
 
 function getCommits() {
@@ -67,7 +67,7 @@ function getCommits() {
     setTimeout(() => {
       console.log(`Calling GitHub API...`);
       resolve(['commit1', 'commit2']);
-    }, 1000)
-  })
+    }, 1000);
+  });
 }
 

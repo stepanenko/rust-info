@@ -1,3 +1,4 @@
+
 const http = require('http');
 
 const server = http.createServer((req, res) => {
@@ -6,7 +7,7 @@ const server = http.createServer((req, res) => {
     res.end();
   }
   if (req.url === '/api/clients') {
-    res.write(JSON.stringify([1,2,3,4]));
+    res.write(JSON.stringify([1, 2, 3, 4]));
     res.end();
   }
 
