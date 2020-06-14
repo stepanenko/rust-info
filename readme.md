@@ -1,4 +1,10 @@
 
-## New Repo Placeholder
+## Node Advanced Concepts
 
-Here can be a next project
+Author: **Stephen Grider**
+
+Progress:
+
+1. The Internals of Node **3/22**
+
+1. Enhancing Node Performance **0/14**
