@@ -1,5 +1,5 @@
 
-## [Node Advanced Concepts](https://coursehunter.net/course/node-js-prodvinutye-temy)
+## [Node JS: Advanced Concepts](https://coursehunter.net/course/node-js-prodvinutye-temy)
 
 Author: **Stephen Grider**
 
@@ -13,6 +13,6 @@ Progress:
 
 2. Enhancing Node Performance: **0/14**
 
-3. Project Setup **0/6**
+3. Project Setup: **0/6**
 
-4. Data Caching with Redis **0/28**
+4. Data Caching with Redis: **0/28**
