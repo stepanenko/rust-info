@@ -7,12 +7,18 @@ Updated: **04.06.2020**
 
 Duration: **16:03:30**
 
-Progress:
+### Progress:
 
-1. The Internals of Node: **14/22**
+1. The Internals of Node: **19/22**
 
 2. Enhancing Node Performance: **0/14**
 
 3. Project Setup: **0/6**
 
 4. Data Caching with Redis: **0/28**
+
+5. Automated Headless Browser Testing **0/53**
+
+6. Wiring Up Continuous Integration **0/15**
+
+7. Scalable ImageFile Upload **0/29**
