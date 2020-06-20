@@ -1,5 +1,5 @@
 
-process.env.UV_THREADPOOL_SIZE = 5;   // default is 4 threads
+// process.env.UV_THREADPOOL_SIZE = 5;   // default is 4 threads
 // process.env.UV_THREADPOOL_SIZE = 2;
 // process.env.UV_THREADPOOL_SIZE = 1;
 
