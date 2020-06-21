@@ -11,7 +11,7 @@ Duration: **16:03:30**
 
 1. The Internals of Node: **22/22**
 
-2. Enhancing Node Performance: **9/14**
+2. Enhancing Node Performance: **12/14**
 
 3. Project Setup: **0/6**
 
