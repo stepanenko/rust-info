@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/stepanenko/new-empty-repo#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pm2": "^4.4.0"
   }
 }
