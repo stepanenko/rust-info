@@ -1,9 +1,9 @@
 
 ## Using Apache Benchmarking:
 
-Only works in mac or linux.
+Works only on mac and linux.
 
-In Terminal run `ab -c 50 -n 500 localhost:3000` (or whatever your url is)
+In Terminal run `ab -c 10 -n 100 localhost:3000/` (or whatever your url is)
 
 `-c` concurrency  Number of multiple requests to make at a time
 
