@@ -13,7 +13,7 @@ Duration: **16:03:30**
 
 2. Enhancing Node Performance: **14/14**
 
-3. Project Setup: **0/6**
+3. Project Setup: **3/6**
 
 4. Data Caching with Redis: **0/28**
 
