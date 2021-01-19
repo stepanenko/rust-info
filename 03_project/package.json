@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,20 +14,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.761.0",
+    "aws-sdk": "^2.828.0",
     "body-parser": "^1.19.0",
     "concurrently": "^5.3.0",
     "cookie-session": "^2.0.0-beta.2",
     "express": "^4.17.1",
-    "jest": "^26.4.2",
+    "jest": "^26.6.3",
     "migrate-mongoose": "^4.0.0",
-    "mongoose": "^5.10.7",
-    "nodemon": "^2.0.4",
+    "mongoose": "^5.11.12",
+    "nodemon": "^2.0.7",
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0",
     "path-parser": "^6.1.0",
-    "puppeteer": "^5.3.1",
+    "puppeteer": "^5.5.0",
     "redis": "^3.0.2",
-    "uuid": "^8.3.0"
+    "uuid": "^8.3.2"
   }
 }
