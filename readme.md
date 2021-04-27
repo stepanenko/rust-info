@@ -1,7 +1,7 @@
 
 ## [Node JS: Advanced Concepts](https://coursehunter.net/course/node-js-prodvinutye-temy)
 
-Author: **Stephen Grider**
+Course teacher: **Stephen Grider**
 
 Updated: **04.06.2020**
 
