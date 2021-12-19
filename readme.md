@@ -28,3 +28,7 @@ There are a lot of features of Rust which make it a great tool for a great numbe
 Rust is exceptionally fast, as C and C++. Memory consumption - **rust does not have a
 garbage collector** so you can use exactly as much memory as is strictly necessary
 at any given time. 
+
+### [Cargo](https://doc.rust-lang.org/cargo/index.html)
+Cargo is the Rust package manager. Cargo downloads your Rust package's dependencies, compiles your packages,
+makes distributable packages, and uploads them to [**crates.io**](https://crates.io/), the Rust community’s package registry.
