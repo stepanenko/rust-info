@@ -21,3 +21,10 @@ There are a lot of features of Rust which make it a great tool for a great numbe
 - Fearless concurrency
 - Cross platform
 - C interoperability
+
+
+### Performance
+
+Rust is exceptionally fast, as C and C++. Memory consumption - **rust does not have a
+garbage collector** so you can use exactly as much memory as is strictly necessary
+at any given time. 
