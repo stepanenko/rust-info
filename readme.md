@@ -1,6 +1,33 @@
 
 # Rust Info Notes
 
+Rust official getting started page: https://www.rust-lang.org/learn/get-started
+
+Install Rustup (Rust installer and version management tool) on Mac:
+```zsh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+When you install Rustup you’ll also get the latest stable version of the Rust build tool and package manager, also known as Cargo. Cargo does lots of things:
+- build your project with `cargo build`
+- run your project with `cargo run`
+- test your project with `cargo test`
+- build documentation for your project with `cargo doc`
+- publish a library to crates.io with `cargo publish`
+
+To test that you have Rust and Cargo installed, you can run this in your terminal of choice:
+```zsh
+cargo --version
+```
+
+Rust updates very frequently. Get the latest version of Rust by running:
+```zsh
+rustup update
+```
+
+---
+## Fullstack Rust: The Complete Guide to Buildings Apps with the Rust
+
 All of good ideas from the world of programming language design combine
 in a unique way to make Rust a language that truly makes you think about writing
 code from a novel perspective. It does not matter how much experience you have,
