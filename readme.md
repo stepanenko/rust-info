@@ -1,5 +1,5 @@
 
-# Rust Info Notes
+# Rust Notes
 
 Rust official getting started page: https://www.rust-lang.org/learn/get-started
 
@@ -26,7 +26,9 @@ rustup update
 ```
 
 ---
-## Fullstack Rust: The Complete Guide to Buildings Apps with the Rust
+## Rust programming language
+
+Current reading: **Fullstack Rust: The Complete Guide to Buildings Apps with the Rust**
 
 All of good ideas from the world of programming language design combine
 in a unique way to make Rust a language that truly makes you think about writing
