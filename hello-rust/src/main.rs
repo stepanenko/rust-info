@@ -1,6 +1,6 @@
 fn main() {
     let mut bunnies = 16; // can be mutated
-    // let bunnies = 2; // can't be mutated (shadowing)
+    // let bunnies = 2; // works (shadow), if redefined without 'mut' won't be mutable 
     bunnies = bunnies - 6;
     println!("Bunnies: {}", bunnies);
 
