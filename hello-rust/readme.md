@@ -1,4 +1,8 @@
 
 ## First Rust Program
 
-Created: 4.01.2022
+Inspired by: Ultimate Rust Crash Course (7 / 35)
+
+`cargo run` - build and run (builds to `/target/debug` folder)
+
+`cargo run --release` - (builds for prod `/target/release` folder)
