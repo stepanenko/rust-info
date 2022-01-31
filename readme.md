@@ -1,6 +1,8 @@
 
 # Rust Notes
 
+Rust by Example: https://doc.rust-lang.org/rust-by-example/index.html#rust-by-example
+
 Rust official getting started page: https://www.rust-lang.org/learn/get-started
 
 Install Rustup (Rust installer and version management tool) on Mac:

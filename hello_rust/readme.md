@@ -1,7 +1,7 @@
 
 ## First Rust Program
 
-Inspired by: Ultimate Rust Crash Course (7 / 35)
+Inspired by: Ultimate Rust Crash Course (10 / 35)
 
 `cargo run` - build and run (builds to `/target/debug` folder)
 
