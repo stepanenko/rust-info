@@ -1,9 +1,15 @@
 
-# Rust Notes
+# Rust
+
+The Rust Programming Language: https://doc.rust-lang.org/book/
+
+Rust official getting started page: https://www.rust-lang.org/learn/get-started
 
 Rust by Example: https://doc.rust-lang.org/rust-by-example/index.html#rust-by-example
 
-Rust official getting started page: https://www.rust-lang.org/learn/get-started
+Small exercises to get you used to reading and writing Rust: https://github.com/rust-lang/rustlings
+
+---
 
 Install Rustup (Rust installer and version management tool) on Mac:
 ```zsh
