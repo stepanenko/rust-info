@@ -47,6 +47,9 @@ There is no best programming language. Almost every task has a variety of langua
 which could be the right tool. Every language comes with good parts and bad parts.
 Evaluating these trade-offs when faced with a particular problem is an art.
 
+Rust isn't limited to low-level systems programming.
+It’s expressive and ergonomic enough to make CLI apps, web servers, and many other kinds of code quite pleasant to write
+
 ## Language features
 
 There are a lot of features of Rust which make it a great tool for a great number of tasks. Some highlights include:
@@ -66,7 +69,11 @@ Rust is exceptionally fast, as C and C++. Memory consumption - **rust does not h
 garbage collector** so you can use exactly as much memory as is strictly necessary
 at any given time.
 
-Rust uses a relatively unique memory management approach that incorporates the idea of memory “ownership”. Basically, Rust keeps track of who can read and write to memory. It knows when the program is using memory and immediately frees the memory once it is no longer needed. It enforces memory rules at compile time, making it virtually impossible to have runtime memory bugs. You do not need to manually keep track of memory. The compiler takes care of it.
+Rust uses a relatively unique memory management approach that incorporates the idea of memory "ownership".
+Basically, Rust keeps track of who can read and write to memory.
+It knows when the program is using memory and immediately frees the memory once it is no longer needed.
+It enforces memory rules at compile time, making it virtually impossible to have runtime memory bugs.
+You do not need to manually keep track of memory. The compiler takes care of it.
 
 ### [Cargo](https://doc.rust-lang.org/cargo/index.html)
 Cargo is the Rust package manager. Cargo downloads your Rust package's dependencies, compiles your packages,
