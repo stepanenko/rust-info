@@ -1,7 +1,7 @@
 
 # Rust
 
-The Rust Programming Language: https://doc.rust-lang.org/book/
+Book: "The Rust Programming Language": https://doc.rust-lang.org/book/
 
 Rust official getting started page: https://www.rust-lang.org/learn/get-started
 
