@@ -78,3 +78,13 @@ You do not need to manually keep track of memory. The compiler takes care of it.
 ### [Cargo](https://doc.rust-lang.org/cargo/index.html)
 Cargo is the Rust package manager. Cargo downloads your Rust package's dependencies, compiles your packages,
 makes distributable packages, and uploads them to [**crates.io**](https://crates.io/), the Rust community’s package registry.
+
+Some Cargo commands:
+
+- `cargo --version`
+- `cargo new hello_cargo` - create a new project called hello_cargo
+- `cargo build` - create an executable file in `target/debug/hello_cargo` (the default build is a debug build)
+- `./target/debug/hello_cargo # or .\target\debug\hello_cargo.exe on Windows` - runs the executable
+- `cargo run` - one command to compile and run the executable - using `cargo run` is more convenient than remembering to run `cargo build` and then use the whole path to the binary
+- `cargo check` - build a project without producing a binary to check for errors
+- `cargo build --release` - compile with optimizations, creates an executable in `target/release`
