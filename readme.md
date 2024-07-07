@@ -87,4 +87,5 @@ Some Cargo commands:
 - `./target/debug/hello_cargo # or .\target\debug\hello_cargo.exe on Windows` - runs the executable
 - `cargo run` - one command to compile and run the executable - using `cargo run` is more convenient than remembering to run `cargo build` and then use the whole path to the binary
 - `cargo check` - build a project without producing a binary to check for errors
-- `cargo build --release` - compile with optimizations, creates an executable in `target/release`
+- `cargo build --release` - compile with optimizations, creates an executable in `target/release`  
+If you’re benchmarking your code’s running time, be sure to run `cargo build --release` and benchmark with the executable in `target/release`.
